@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Mira Gündem – Haberleri İlk Sen Öğren</title>
+  <meta name="description" content="Mira Gündem haber uygulamasını indir. Doğru, güvenilir ve tarafsız habercilik. Son dakika gelişmeleri anında öğren.">
+  <meta name="theme-color" content="#0A0F1C">
+  <meta property="og:title" content="Mira Gündem – Haberleri İlk Sen Öğren">
+  <meta property="og:description" content="Türkiye'nin güvenilir haber kaynağı. Son dakika haberleri, gündem ve daha fazlası.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://miragundem.com">
+  <link rel="icon" type="image/x-icon" href="https://miragundem.com/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--red"></div>
+    <div class="ambient-orb ambient-orb--blue"></div>
+  </div>
+
+  <!-- Top Accent Bar -->
+  <div class="accent-bar" aria-hidden="true"></div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="card">
+
+      <!-- Live Badge -->
+      <div style="text-align:center;">
+        <span class="live-badge">
+          <span class="live-badge__dot" aria-hidden="true"></span>
+          Son Dakika
+        </span>
+      </div>
+
+      <!-- Logo -->
+      <div class="logo">
+        <div class="logo__icon">
+          <!-- Exact mG logo: bold 'm' with two rounded arches + geometric 'G' with crossbar -->
+          <svg viewBox="0 0 140 80" width="48" height="28" xmlns="http://www.w3.org/2000/svg" aria-label="Mira Gündem Logo" role="img">
+            <!-- 'm' — two bold rounded arches, flat bottom cuts -->
+            <path d="M6,68 L6,34 Q6,8 24,8 Q40,8 40,34 L40,68" 
+                  fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+            <path d="M40,68 L40,34 Q40,8 58,8 Q72,8 72,28" 
+                  fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+            <!-- 'G' — geometric uppercase with horizontal crossbar, lighter color -->
+            <path d="M120,22 Q112,6 96,6 Q78,6 78,40 Q78,74 96,74 Q112,74 120,58 L120,44 L100,44" 
+                  fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <div class="logo__name">Mira Gündem</div>
+          <div class="logo__tagline">Doğru, Güvenilir ve Tarafsız Habercilik</div>
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="headline">
+        <h1 class="headline__main">
+          Herkes <span class="headline__accent">konuşurken</span>,<br>
+          sen <span class="headline__accent">gerçeği</span> oku.
+        </h1>
+        <p class="headline__sub">
+          Türkiye gündemi avucunun içinde.<br>
+          Son dakika gelişmelerini saniyeler içinde öğren.
+        </p>
+      </div>
+
+      <!-- Rotating Slogans -->
+      <div class="slogans" aria-label="Sloganlar">
+        <div class="slogans__track">
+          <div class="slogans__item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            Gündemi kaçırma, gündemi yakala!
+          </div>
+          <div class="slogans__item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            Bilgi güçtür. İlk sen öğren.
+          </div>
+          <div class="slogans__item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            7/24 kesintisiz, tarafsız habercilik
+          </div>
+          <div class="slogans__item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            Haber senin için gelsin, sen değil.
+          </div>
+          <div class="slogans__item">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            Gündemi kaçırma, gündemi yakala!
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Chips (SVG icons — no emojis) -->
+      <div class="features">
+        <div class="feature">
+          <!-- Lucide: zap -->
+          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Son Dakika
+        </div>
+        <div class="feature">
+          <!-- Lucide: globe -->
+          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Dünya
+        </div>
+        <div class="feature">
+          <!-- Lucide: trending-up -->
+          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          Ekonomi
+        </div>
+        <div class="feature">
+          <!-- Lucide: trophy (simplified) -->
+          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Spor
+        </div>
+        <div class="feature">
+          <!-- Lucide: bell -->
+          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          Bildirim
+        </div>
+      </div>
+
+      <!-- Redirect Status (shown during countdown) -->
+      <div class="redirect-status" id="redirectStatus">
+        <div class="redirect-status__text">Yönlendiriliyor...</div>
+        <div class="redirect-status__count" id="countdown">3</div>
+        <div class="redirect-status__platform" id="platformText"></div>
+      </div>
+
+      <!-- Download Buttons -->
+      <div class="actions" id="buttonsSection">
+        <!-- App Store -->
+        <a href="#" class="btn btn--ios" id="btnIos" role="button" aria-label="App Store'dan İndir">
+          <!-- Apple SVG -->
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Şimdi İndir</span>
+            <span class="btn__title">App Store</span>
+          </div>
+        </a>
+
+        <!-- Google Play -->
+        <a href="#" class="btn btn--android btn--android-pending" id="btnAndroid" role="button" aria-label="Google Play'den İndir">
+          <!-- Google Play SVG -->
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Çok Yakında</span>
+            <span class="btn__title">Google Play</span>
+          </div>
+          <span class="btn__badge" id="androidBadge">Yakında</span>
+        </a>
+
+        <!-- Web -->
+        <a href="https://miragundem.com" class="btn btn--web" id="btnWeb" role="button" aria-label="Web sitesini aç">
+          <!-- Globe SVG -->
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Tarayıcıda Aç</span>
+            <span class="btn__title">miragundem.com</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Trust Signals -->
+      <div class="trust">
+        <div class="trust__item">
+          <!-- Lucide: shield-check -->
+          <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>
+          </svg>
+          Güvenli
+        </div>
+        <div class="trust__item">
+          <!-- Lucide: star -->
+          <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          Ücretsiz
+        </div>
+        <div class="trust__item">
+          <!-- Lucide: flag -->
+          <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+          </svg>
+          Türkçe
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <a href="https://miragundem.com">miragundem.com</a> · © 2026 Mira Gündem
+    </div>
+  </div>
+
+  <script>
+    // ==========================================
+    // CONFIG (embedded + dynamic from config.json)
+    // ==========================================
+    const CONFIG = {
+      ios: { url: "https://apps.apple.com/tr/app/mira-g%C3%BCndem/id6759664120?l=tr", active: true },
+      android: { url: "", active: false, fallbackUrl: "https://miragundem.com" },
+      desktop: { url: "https://miragundem.com" },
+      fallbackUrl: "https://miragundem.com"
+    };
+
+    async function loadConfig() {
+      try {
+        const r = await fetch('./config.json');
+        if (r.ok) {
+          const d = await r.json();
+          Object.assign(CONFIG.ios, d.ios || {});
+          Object.assign(CONFIG.android, d.android || {});
+          Object.assign(CONFIG.desktop, d.desktop || {});
+          CONFIG.fallbackUrl = d.fallbackUrl || CONFIG.fallbackUrl;
+        }
+      } catch (e) { /* use defaults */ }
+    }
+
+    // ==========================================
+    // DEVICE DETECTION
+    // ==========================================
+    function detectPlatform() {
+      const ua = navigator.userAgent || '';
+      if (/iphone|ipad|ipod/i.test(ua)) return 'ios';
+      if (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1) return 'ios';
+      if (/android/i.test(ua)) return 'android';
+      if (/huawei|harmonyos/i.test(ua)) return 'android';
+      return 'desktop';
+    }
+
+    function getRedirectUrl(p) {
+      if (p === 'ios') return CONFIG.ios.active ? CONFIG.ios.url : CONFIG.fallbackUrl;
+      if (p === 'android') return (CONFIG.android.active && CONFIG.android.url) ? CONFIG.android.url : (CONFIG.android.fallbackUrl || CONFIG.fallbackUrl);
+      return CONFIG.desktop.url || CONFIG.fallbackUrl;
+    }
+
+    function getPlatformLabel(p) {
+      if (p === 'ios') return 'iOS algılandı → App Store';
+      if (p === 'android') return CONFIG.android.active ? 'Android algılandı → Google Play' : 'Android algılandı → Web sitesi';
+      return 'Masaüstü → Web sitesi';
+    }
+
+    // ==========================================
+    // UI UPDATES
+    // ==========================================
+    function updateAndroidButton() {
+      const btn = document.getElementById('btnAndroid');
+      const badge = document.getElementById('androidBadge');
+      if (CONFIG.android.active && CONFIG.android.url) {
+        btn.classList.remove('btn--android-pending');
+        btn.classList.add('btn--android');
+        btn.querySelector('.btn__label').textContent = 'Şimdi İndir';
+        if (badge) badge.style.display = 'none';
+      }
+    }
+
+    // ==========================================
+    // REDIRECT
+    // ==========================================
+    function startRedirect(platform) {
+      const url = getRedirectUrl(platform);
+      const el = document.getElementById('redirectStatus');
+      const countEl = document.getElementById('countdown');
+      const platEl = document.getElementById('platformText');
+
+      el.classList.add('redirect-status--visible');
+      platEl.textContent = getPlatformLabel(platform);
+
+      let sec = 3;
+      countEl.textContent = sec;
+      const iv = setInterval(() => {
+        sec--;
+        countEl.textContent = sec;
+        if (sec <= 0) { clearInterval(iv); window.location.href = url; }
+      }, 1000);
+    }
+
+    // ==========================================
+    // CLICK HANDLERS
+    // ==========================================
+    document.getElementById('btnIos').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = CONFIG.ios.active ? CONFIG.ios.url : CONFIG.fallbackUrl;
+    });
+
+    document.getElementById('btnAndroid').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = (CONFIG.android.active && CONFIG.android.url) ? CONFIG.android.url : (CONFIG.android.fallbackUrl || CONFIG.fallbackUrl);
+    });
+
+    // ==========================================
+    // INIT
+    // ==========================================
+    async function init() {
+      await loadConfig();
+      updateAndroidButton();
+      const p = detectPlatform();
+      if (p === 'ios' || p === 'android') {
+        setTimeout(() => startRedirect(p), 1200);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

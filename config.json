@@ -1,0 +1,17 @@
+{
+  "appName": "Mira Gündem",
+  "tagline": "Doğru, Güvenilir ve Tarafsız Habercilik",
+  "ios": {
+    "url": "https://apps.apple.com/tr/app/mira-g%C3%BCndem/id6759664120?l=tr",
+    "active": true
+  },
+  "android": {
+    "url": "",
+    "active": false,
+    "fallbackUrl": "https://miragundem.com"
+  },
+  "desktop": {
+    "url": "https://miragundem.com"
+  },
+  "fallbackUrl": "https://miragundem.com"
+}
