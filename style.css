@@ -479,6 +479,64 @@ body {
 }
 
 /* ==========================================
+   ANNOUNCEMENT CARD
+   ========================================== */
+.announcement {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-left: 3px solid var(--mg-gold);
+  border-radius: var(--radius-md);
+  animation: announceFadeIn 0.8s 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes announceFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.announcement__icon {
+  flex-shrink: 0;
+  margin-top: 1px;
+  stroke: var(--mg-gold);
+  opacity: 0.9;
+}
+
+.announcement__text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+}
+
+.announcement__text strong {
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text-primary);
+}
+
+.announcement__link {
+  color: var(--mg-gold);
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+  transition: border-color var(--transition-normal), color var(--transition-normal);
+  cursor: pointer;
+}
+
+.announcement__link:hover {
+  color: #FBBF24;
+  border-color: #FBBF24;
+}
+
+/* ==========================================
    TRUST
    ========================================== */
 .trust {
