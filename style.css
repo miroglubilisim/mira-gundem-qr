@@ -451,23 +451,25 @@ body {
 
 /* Button Variants */
 .btn--ios {
-  background: #000;
+  background: linear-gradient(135deg, #1B2845 0%, #253A5E 100%);
   color: white;
   box-shadow: var(--shadow-btn);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .btn--ios:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  background: linear-gradient(135deg, #253A5E 0%, #2C4A6E 100%);
+  box-shadow: 0 4px 20px rgba(27,40,69,0.6);
   transform: translateY(-1px);
 }
 
 .btn--android {
-  background: #1B5E20;
+  background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
   color: white;
   box-shadow: var(--shadow-btn);
 }
 .btn--android:hover {
-  background: #2E7D32;
-  box-shadow: 0 4px 20px rgba(46,125,50,0.4);
+  background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+  box-shadow: 0 4px 20px rgba(30,64,175,0.4);
   transform: translateY(-1px);
 }
 
@@ -486,15 +488,33 @@ body {
   color: var(--mg-gold);
 }
 
-.btn--youtube {
-  background: linear-gradient(135deg, #CC0000 0%, #FF0000 100%);
+.btn--youtube-blue {
+  background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
   color: white;
   box-shadow: var(--shadow-btn);
 }
-.btn--youtube:hover {
-  background: linear-gradient(135deg, #B00000 0%, #E60000 100%);
-  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+.btn--youtube-blue:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  box-shadow: 0 4px 20px rgba(37,99,235,0.4);
   transform: translateY(-1px);
+}
+
+.btn--youtube-white {
+  background: rgba(255,255,255,0.95);
+  color: var(--mg-navy);
+  box-shadow: var(--shadow-btn);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.btn--youtube-white:hover {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+}
+.btn--youtube-white .btn__label {
+  color: var(--mg-steel);
+}
+.btn--youtube-white .btn__icon {
+  color: #FF0000;
 }
 
 /* YouTube Section Divider */
