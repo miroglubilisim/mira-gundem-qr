@@ -451,26 +451,39 @@ body {
 
 /* Button Variants */
 .btn--ios {
-  background: linear-gradient(135deg, #1B2845 0%, #253A5E 100%);
-  color: white;
+  background: rgba(255,255,255,0.95);
+  color: var(--mg-navy);
   box-shadow: var(--shadow-btn);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 .btn--ios:hover {
-  background: linear-gradient(135deg, #253A5E 0%, #2C4A6E 100%);
-  box-shadow: 0 4px 20px rgba(27,40,69,0.6);
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.15);
   transform: translateY(-1px);
+}
+.btn--ios .btn__label {
+  color: var(--mg-steel);
+}
+.btn--ios .btn__icon {
+  color: #000;
 }
 
 .btn--android {
-  background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
-  color: white;
+  background: rgba(255,255,255,0.95);
+  color: var(--mg-navy);
   box-shadow: var(--shadow-btn);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 .btn--android:hover {
-  background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
-  box-shadow: 0 4px 20px rgba(30,64,175,0.4);
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.15);
   transform: translateY(-1px);
+}
+.btn--android .btn__label {
+  color: var(--mg-steel);
+}
+.btn--android .btn__icon {
+  color: #3DDC84;
 }
 
 .btn--android-pending {
@@ -489,14 +502,21 @@ body {
 }
 
 .btn--youtube-blue {
-  background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
-  color: white;
+  background: rgba(255,255,255,0.95);
+  color: var(--mg-navy);
   box-shadow: var(--shadow-btn);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 .btn--youtube-blue:hover {
-  background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
-  box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.15);
   transform: translateY(-1px);
+}
+.btn--youtube-blue .btn__label {
+  color: var(--mg-steel);
+}
+.btn--youtube-blue .btn__icon {
+  color: #FF0000;
 }
 
 .btn--youtube-white {
