@@ -115,13 +115,6 @@
         </div>
       </div>
 
-      <!-- Redirect Status (shown during countdown) -->
-      <div class="redirect-status" id="redirectStatus">
-        <div class="redirect-status__text">Yönlendiriliyor...</div>
-        <div class="redirect-status__count" id="countdown">3</div>
-        <div class="redirect-status__platform" id="platformText"></div>
-        <div class="redirect-status__info" id="redirectInfo" style="display:none;"></div>
-      </div>
 
       <!-- Download Buttons -->
       <div class="actions" id="buttonsSection">
@@ -259,29 +252,6 @@
       }
     }
 
-    // ==========================================
-    // REDIRECT
-    // ==========================================
-    function startRedirect(platform) {
-      const url = getRedirectUrl(platform);
-      const el = document.getElementById('redirectStatus');
-      const countEl = document.getElementById('countdown');
-      const platEl = document.getElementById('platformText');
-      const infoEl = document.getElementById('redirectInfo');
-
-      el.classList.add('redirect-status--visible');
-      platEl.textContent = getPlatformLabel(platform);
-
-      infoEl.style.display = 'none';
-
-      let sec = 3;
-      countEl.textContent = sec;
-      const iv = setInterval(() => {
-        sec--;
-        countEl.textContent = sec;
-        if (sec <= 0) { clearInterval(iv); window.location.href = url; }
-      }, 1000);
-    }
 
     // ==========================================
     // CLICK HANDLERS
@@ -302,10 +272,6 @@
     async function init() {
       await loadConfig();
       updateAndroidButton();
-      const p = detectPlatform();
-      if (p === 'ios' || p === 'android') {
-        setTimeout(() => startRedirect(p), 1200);
-      }
     }
 
     document.addEventListener('DOMContentLoaded', init);
