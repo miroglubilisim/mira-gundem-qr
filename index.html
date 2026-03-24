@@ -28,18 +28,9 @@
   <div class="container">
     <div class="card">
 
-      <!-- Live Badge -->
-      <div style="text-align:center;">
-        <span class="live-badge">
-          <span class="live-badge__dot" aria-hidden="true"></span>
-          Son Dakika
-        </span>
-      </div>
-
-      <!-- Logo -->
-      <div class="logo">
+      <!-- Compact Logo Header -->
+      <div class="logo logo--compact">
         <div class="logo__icon">
-          <!-- Actual official brand logo from miragundem.com -->
           <img src="mira-logo.png" alt="mG" style="width:48px; height:auto; filter:brightness(0) invert(1);" aria-label="Mira Gündem Logo">
         </div>
         <div class="logo__text">
@@ -48,79 +39,17 @@
         </div>
       </div>
 
-      <!-- Headline -->
-      <div class="headline">
-        <h1 class="headline__main">
-          Herkes <span class="headline__accent">konuşurken</span>,<br>
-          sen <span class="headline__accent">gerçeği</span> oku.
-        </h1>
-        <p class="headline__sub">
-          Türkiye gündemi avucunun içinde.<br>
-          Son dakika gelişmelerini saniyeler içinde öğren.
-        </p>
+      <!-- ===== ALL LINKS — FIRST VISIBLE SECTION ===== -->
+
+      <!-- App Download -->
+      <div class="section-divider">
+        <span class="section-divider__line"></span>
+        <span class="section-divider__text">Uygulamayı İndir</span>
+        <span class="section-divider__line"></span>
       </div>
 
-      <!-- Rotating Slogans -->
-      <div class="slogans" aria-label="Sloganlar">
-        <div class="slogans__track">
-          <div class="slogans__item">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            Gündemi kaçırma, gündemi yakala!
-          </div>
-          <div class="slogans__item">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            Bilgi güçtür. İlk sen öğren.
-          </div>
-          <div class="slogans__item">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            7/24 kesintisiz, tarafsız habercilik
-          </div>
-          <div class="slogans__item">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            Haber senin için gelsin, sen değil.
-          </div>
-          <div class="slogans__item">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-            Gündemi kaçırma, gündemi yakala!
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature Chips (SVG icons — no emojis) -->
-      <div class="features">
-        <div class="feature">
-          <!-- Lucide: zap -->
-          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Son Dakika
-        </div>
-        <div class="feature">
-          <!-- Lucide: globe -->
-          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          Dünya
-        </div>
-        <div class="feature">
-          <!-- Lucide: trending-up -->
-          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          Ekonomi
-        </div>
-        <div class="feature">
-          <!-- Lucide: trophy (simplified) -->
-          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-          Spor
-        </div>
-        <div class="feature">
-          <!-- Lucide: bell -->
-          <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-          Bildirim
-        </div>
-      </div>
-
-
-      <!-- Download Buttons -->
-      <div class="actions" id="buttonsSection">
-        <!-- App Store -->
+      <div class="link-grid">
         <a href="#" class="btn btn--ios" id="btnIos" role="button" aria-label="App Store'dan İndir">
-          <!-- Apple SVG -->
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
           </svg>
@@ -130,9 +59,7 @@
           </div>
         </a>
 
-        <!-- Google Play -->
         <a href="https://play.google.com/store/apps/details?id=com.miroglu.mira_gundem_mobil" class="btn btn--android" id="btnAndroid" role="button" aria-label="Google Play'den İndir">
-          <!-- Google Play SVG -->
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
           </svg>
@@ -141,70 +68,99 @@
             <span class="btn__title">Google Play</span>
           </div>
         </a>
-
       </div>
 
-        <!-- YouTube Channels -->
-        <div class="yt-divider">
-          <span class="yt-divider__line"></span>
-          <span class="yt-divider__text">YouTube Kanallarımız</span>
-          <span class="yt-divider__line"></span>
+      <!-- YouTube Channels -->
+      <div class="section-divider">
+        <span class="section-divider__line"></span>
+        <span class="section-divider__text">YouTube Kanallarımız</span>
+        <span class="section-divider__line"></span>
+      </div>
+
+      <div class="link-grid">
+        <a href="https://www.youtube.com/@MiraMedyaGrubu" class="btn btn--youtube-blue" target="_blank" rel="noopener" role="button" aria-label="Mira Medya Grubu YouTube kanalı">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Kanalı Ziyaret Et</span>
+            <span class="btn__title">Mira Medya Grubu</span>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@Mira%C3%87ocuk" class="btn btn--youtube-white" target="_blank" rel="noopener" role="button" aria-label="Mira Çocuk YouTube kanalı">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Kanalı Ziyaret Et</span>
+            <span class="btn__title">Mira Çocuk</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="section-divider">
+        <span class="section-divider__line"></span>
+        <span class="section-divider__text">Sosyal Medya</span>
+        <span class="section-divider__line"></span>
+      </div>
+
+      <div class="link-grid">
+        <a href="https://www.instagram.com/miragundem/" class="btn btn--social" target="_blank" rel="noopener" role="button" aria-label="Instagram hesabı">
+          <svg class="btn__icon btn__icon--instagram" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Takip Et</span>
+            <span class="btn__title">Instagram</span>
+          </div>
+        </a>
+
+        <a href="https://x.com/miragundem" class="btn btn--social" target="_blank" rel="noopener" role="button" aria-label="X hesabı">
+          <svg class="btn__icon btn__icon--x" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <div class="btn__content">
+            <span class="btn__label">Takip Et</span>
+            <span class="btn__title">X (Twitter)</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- ===== BRANDING / INFO — BELOW THE FOLD ===== -->
+
+      <!-- Compact Headline -->
+      <div class="info-section">
+        <h1 class="headline__main headline__main--sm">
+          Herkes <span class="headline__accent">konuşurken</span>,<br>
+          sen <span class="headline__accent">gerçeği</span> oku.
+        </h1>
+
+        <!-- Feature Chips -->
+        <div class="features">
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Son Dakika
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Dünya
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            Ekonomi
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Spor
+          </div>
+          <div class="feature">
+            <svg class="feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            Bildirim
+          </div>
         </div>
-
-        <div class="actions actions--yt">
-          <a href="https://www.youtube.com/@MiraMedyaGrubu" class="btn btn--youtube-blue" target="_blank" rel="noopener" role="button" aria-label="Mira Medya Grubu YouTube kanalı">
-            <!-- YouTube SVG -->
-            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-            <div class="btn__content">
-              <span class="btn__label">Kanalı Ziyaret Et</span>
-              <span class="btn__title">Mira Medya Grubu</span>
-            </div>
-          </a>
-
-          <a href="https://www.youtube.com/@Mira%C3%87ocuk" class="btn btn--youtube-white" target="_blank" rel="noopener" role="button" aria-label="Mira Çocuk YouTube kanalı">
-            <!-- YouTube SVG -->
-            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-            <div class="btn__content">
-              <span class="btn__label">Kanalı Ziyaret Et</span>
-              <span class="btn__title">Mira Çocuk</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Social Media -->
-        <div class="yt-divider">
-          <span class="yt-divider__line"></span>
-          <span class="yt-divider__text">Sosyal Medya</span>
-          <span class="yt-divider__line"></span>
-        </div>
-
-        <div class="actions actions--yt">
-          <a href="https://www.instagram.com/miragundem/" class="btn btn--social" target="_blank" rel="noopener" role="button" aria-label="Instagram hesabı">
-            <!-- Instagram SVG -->
-            <svg class="btn__icon btn__icon--instagram" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-            </svg>
-            <div class="btn__content">
-              <span class="btn__label">Takip Et</span>
-              <span class="btn__title">Instagram</span>
-            </div>
-          </a>
-
-          <a href="https://x.com/miragundem" class="btn btn--social" target="_blank" rel="noopener" role="button" aria-label="X hesabı">
-            <!-- X (Twitter) SVG -->
-            <svg class="btn__icon btn__icon--x" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-            <div class="btn__content">
-              <span class="btn__label">Takip Et</span>
-              <span class="btn__title">X (Twitter)</span>
-            </div>
-          </a>
-        </div>
+      </div>
 
       <!-- Trust Signals -->
       <div class="trust">

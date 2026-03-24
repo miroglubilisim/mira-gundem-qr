@@ -151,7 +151,7 @@ body {
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-2xl);
-  padding: 40px 28px;
+  padding: 28px 24px;
   box-shadow: var(--shadow-lg);
 }
 
@@ -195,7 +195,33 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+}
+
+.logo--compact {
+  flex-direction: row;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.logo--compact .logo__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+}
+
+.logo--compact .logo__text {
+  text-align: left;
+}
+
+.logo--compact .logo__name {
+  font-size: 1.15rem;
+}
+
+.logo--compact .logo__tagline {
+  font-size: 0.65rem;
 }
 
 .logo__icon {
@@ -257,6 +283,12 @@ body {
   margin-top: 10px;
   line-height: 1.55;
   font-weight: 400;
+}
+
+.headline__main--sm {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 /* ==========================================
@@ -392,6 +424,50 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 24px;
+}
+
+/* Section Divider */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 10px;
+}
+
+.section-divider__line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.section-divider__text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Link Grid */
+.link-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.link-grid .btn {
+  padding: 12px 18px;
+}
+
+/* Info Section */
+.info-section {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+  margin-bottom: 16px;
 }
 
 .btn {
@@ -537,40 +613,6 @@ body {
   color: #FF0000;
 }
 
-/* YouTube Section Divider */
-.yt-divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 8px 0 12px;
-}
-
-.yt-divider__line {
-  flex: 1;
-  height: 1px;
-  background: var(--border-subtle);
-}
-
-.yt-divider__text {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.actions--yt {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.actions--yt .btn {
-  padding: 12px 18px;
-}
 
 /* Social Media Buttons */
 .btn--social {
