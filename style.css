@@ -572,6 +572,28 @@ body {
   padding: 12px 18px;
 }
 
+/* Social Media Buttons */
+.btn--social {
+  background: rgba(255,255,255,0.95);
+  color: var(--mg-navy);
+  box-shadow: var(--shadow-btn);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.btn--social:hover {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+}
+.btn--social .btn__label {
+  color: var(--mg-steel);
+}
+.btn__icon--instagram {
+  color: #E1306C;
+}
+.btn__icon--x {
+  color: #000;
+}
+
 /* ==========================================
    ANNOUNCEMENT CARD
    ========================================== */
