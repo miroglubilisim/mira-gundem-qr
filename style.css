@@ -366,6 +366,24 @@ body {
   font-weight: 600;
 }
 
+.redirect-status__info {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  animation: announceFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.redirect-status__info strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 /* ==========================================
    BUTTONS
    ========================================== */

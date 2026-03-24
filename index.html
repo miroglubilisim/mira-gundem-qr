@@ -120,6 +120,7 @@
         <div class="redirect-status__text">Yönlendiriliyor...</div>
         <div class="redirect-status__count" id="countdown">3</div>
         <div class="redirect-status__platform" id="platformText"></div>
+        <div class="redirect-status__info" id="redirectInfo" style="display:none;"></div>
       </div>
 
       <!-- Download Buttons -->
@@ -137,31 +138,18 @@
         </a>
 
         <!-- Google Play -->
-        <a href="#" class="btn btn--android btn--android-pending" id="btnAndroid" role="button" aria-label="Google Play'den İndir">
+        <a href="https://play.google.com/store/apps/details?id=com.miroglu.mira_gundem_mobil" class="btn btn--android" id="btnAndroid" role="button" aria-label="Google Play'den İndir">
           <!-- Google Play SVG -->
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
           </svg>
           <div class="btn__content">
-            <span class="btn__label">Çok Yakında</span>
+            <span class="btn__label">Şimdi İndir</span>
             <span class="btn__title">Google Play</span>
           </div>
-          <span class="btn__badge" id="androidBadge">Yakında</span>
         </a>
 
-        <!-- Play Store Announcement -->
-        <div class="announcement" id="playStoreNote">
-          <div class="announcement__icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="16" x2="12" y2="12"/>
-              <line x1="12" y1="8" x2="12.01" y2="8"/>
-            </svg>
-          </div>
-          <p class="announcement__text">
-            Uygulamamız <strong>Google Play</strong>'de yayınlanmak üzere. Bu süreçte gündemi kaçırmamak için <a href="https://miragundem.com" class="announcement__link">web sitemizden</a> takip edebilirsiniz.
-          </p>
-        </div>
+
 
         <!-- Web -->
         <a href="https://miragundem.com" class="btn btn--web" id="btnWeb" role="button" aria-label="Web sitesini aç">
@@ -216,7 +204,7 @@
     // ==========================================
     const CONFIG = {
       ios: { url: "https://apps.apple.com/tr/app/mira-g%C3%BCndem/id6759664120?l=tr", active: true },
-      android: { url: "", active: false, fallbackUrl: "https://miragundem.com" },
+      android: { url: "https://play.google.com/store/apps/details?id=com.miroglu.mira_gundem_mobil", active: true },
       desktop: { url: "https://miragundem.com" },
       fallbackUrl: "https://miragundem.com"
     };
@@ -263,14 +251,11 @@
     // ==========================================
     function updateAndroidButton() {
       const btn = document.getElementById('btnAndroid');
-      const badge = document.getElementById('androidBadge');
-      const note = document.getElementById('playStoreNote');
       if (CONFIG.android.active && CONFIG.android.url) {
+        btn.href = CONFIG.android.url;
         btn.classList.remove('btn--android-pending');
         btn.classList.add('btn--android');
         btn.querySelector('.btn__label').textContent = 'Şimdi İndir';
-        if (badge) badge.style.display = 'none';
-        if (note) note.style.display = 'none';
       }
     }
 
@@ -282,9 +267,12 @@
       const el = document.getElementById('redirectStatus');
       const countEl = document.getElementById('countdown');
       const platEl = document.getElementById('platformText');
+      const infoEl = document.getElementById('redirectInfo');
 
       el.classList.add('redirect-status--visible');
       platEl.textContent = getPlatformLabel(platform);
+
+      infoEl.style.display = 'none';
 
       let sec = 3;
       countEl.textContent = sec;
@@ -305,7 +293,7 @@
 
     document.getElementById('btnAndroid').addEventListener('click', function(e) {
       e.preventDefault();
-      window.location.href = (CONFIG.android.active && CONFIG.android.url) ? CONFIG.android.url : (CONFIG.android.fallbackUrl || CONFIG.fallbackUrl);
+      window.location.href = CONFIG.android.active && CONFIG.android.url ? CONFIG.android.url : CONFIG.fallbackUrl;
     });
 
     // ==========================================

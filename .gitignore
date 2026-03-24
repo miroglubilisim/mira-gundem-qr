@@ -4,3 +4,5 @@ design-system-output.md
 *.log
 .DS_Store
 Thumbs.db
+
+.vercel
