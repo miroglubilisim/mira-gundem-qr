@@ -486,14 +486,50 @@ body {
   color: var(--mg-gold);
 }
 
-.btn--web {
-  background: var(--mg-navy);
+.btn--youtube {
+  background: linear-gradient(135deg, #CC0000 0%, #FF0000 100%);
   color: white;
   box-shadow: var(--shadow-btn);
 }
-.btn--web:hover {
-  background: var(--mg-navy-light);
+.btn--youtube:hover {
+  background: linear-gradient(135deg, #B00000 0%, #E60000 100%);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
   transform: translateY(-1px);
+}
+
+/* YouTube Section Divider */
+.yt-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 12px;
+}
+
+.yt-divider__line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.yt-divider__text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.actions--yt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.actions--yt .btn {
+  padding: 12px 18px;
 }
 
 /* ==========================================
