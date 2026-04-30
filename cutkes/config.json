@@ -1,0 +1,16 @@
+{
+  "appName": "Cutkes",
+  "tagline": "Profesyonel Kuaför Randevu Sistemi",
+  "ios": {
+    "url": "https://apps.apple.com/tr/app/cutkes/id6754762097?l=tr",
+    "active": true
+  },
+  "android": {
+    "url": "https://play.google.com/store/apps/details?id=com.cutkes.hairsalonapp",
+    "active": true
+  },
+  "desktop": {
+    "url": "https://cutkes.com"
+  },
+  "fallbackUrl": "https://cutkes.com"
+}

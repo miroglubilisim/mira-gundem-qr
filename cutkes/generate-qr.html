@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Styled QR</title>
+  <script src="https://unpkg.com/qr-code-styling@1.8.4/lib/qr-code-styling.js"></script>
+</head>
+<body style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f0f0f0;flex-direction:column;font-family:sans-serif;">
+  <div id="qr-container"></div>
+  <br>
+  <button id="download" style="padding:12px 24px;font-size:16px;cursor:pointer;background:#2BBDC1;color:white;border:none;border-radius:8px;">PNG İndir</button>
+  <p id="status" style="margin-top:12px;color:#666;"></p>
+
+  <script>
+    const qrCode = new QRCodeStyling({
+      width: 800,
+      height: 800,
+      data: "https://cutkes.com",
+      margin: 20,
+      qrOptions: {
+        errorCorrectionLevel: "H"
+      },
+      dotsOptions: {
+        type: "classy-rounded",
+        color: "#2BBDC1"
+      },
+      cornersSquareOptions: {
+        type: "extra-rounded",
+        color: "#2BBDC1"
+      },
+      cornersDotOptions: {
+        type: "dot",
+        color: "#2BBDC1"
+      },
+      backgroundOptions: {
+        color: "#FFFFFF"
+      },
+      imageOptions: {
+        crossOrigin: "anonymous",
+        margin: 14,
+        imageSize: 0.45,
+        hideBackgroundDots: true
+      },
+      image: "cutkes-logo.png"
+    });
+
+    qrCode.append(document.getElementById("qr-container"));
+    document.getElementById("status").textContent = "QR kodu oluşturuldu.";
+
+    document.getElementById("download").addEventListener("click", () => {
+      qrCode.download({ name: "cutkes-qr-styled", extension: "png" });
+    });
+  </script>
+</body>
+</html>
