@@ -35,7 +35,7 @@ async function generateStyledQR() {
     nodeCanvas,
     width: 800,
     height: 800,
-    data: 'https://cutkes.com',
+    data: 'https://cutkes.com/qr',
     margin: 20,
     qrOptions: {
       errorCorrectionLevel: 'H'
